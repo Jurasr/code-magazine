@@ -35,14 +35,18 @@ body {
 }
 
 .header__navigation a:link,
-a:visited {
+a:visited,
+.article__mdn-link:link,
+.article__mdn-link:visited {
   text-decoration: none;
   color: #1098ad;
   margin-right: 20px;
 }
 
 .header__navigation a:hover,
-a:active {
+a:active,
+.article__mdn-link:hover,
+.article__mdn-link:active {
   color: orangered;
   text-decoration: underline;
   font-weight: bold;
@@ -52,6 +56,7 @@ a:active {
 
 .article {
   color: #444;
+  position: relative;
 }
 
 .article__title {
@@ -97,4 +102,30 @@ a:active {
   margin-bottom: 20px;
   font-size: 30px;
   color: #1098ad;
+}
+
+.article ol,
+.article ul {
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+.article li {
+  margin-bottom: 10px;
+}
+
+.article ul {
+  margin-bottom: 20px;
+}
+
+.article__copyright {
+  margin-bottom: 20px;
+}
+
+.article__like-button {
+  padding: 10px 20px;
+  font-size: 22px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
